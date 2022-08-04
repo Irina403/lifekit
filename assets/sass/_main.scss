@@ -1,0 +1,319 @@
+strong{
+	color:$blue;
+}
+.main{
+	background-image:url(../i/bg.jpg);
+	// height: 100vh;
+	background-repeat:no-repeat;
+	background-position-x:75%;
+	background-size:cover;
+	margin-bottom: 20rem;
+	@include bp ($point_3){
+		margin-bottom: 0rem;
+	}
+	&-img{
+		position: absolute;
+		top:-100%;
+		right: 0;
+	}
+		@include bp ($point0){
+			margin-bottom: 25rem;
+	}
+		@include bp ($point_3){
+			margin-bottom: 0rem;
+	}
+}
+.main-img__img img{
+	@include bp ($point_3){
+		width: 52%;
+		margin-left: 40%;
+	}
+	@include bp ($point_4){
+		display: none;
+	}
+}
+// .main-img__img {
+// 	@include bp ($point3){
+// 		width: 70%;
+// 		margin-left: 24%;
+	
+// 	}
+// }
+.main-title{
+	position: relative;
+	padding-top: 15rem;
+	font-family: $font_2;
+	color:$black;
+	z-index: 999;
+	@include bp ($point_4){
+		padding-top: 5rem;
+	}
+	
+	h1{
+		margin-top: 10rem;
+		width: 50rem;
+		font-size: 5.4rem;
+		line-height: 5.2rem;
+		@include bp ($point_4){
+			width: 100%;
+		}
+		@include bp ($point_6){
+			font-size: 48px;
+		}
+		
+	}
+	&__desc{
+		padding-top: 2rem;
+		font-size: 2rem;
+		line-height: 23px;
+		font-family: $font_1;
+		width: 30rem;
+	}
+}
+.main-title::after{
+	top: 35%;
+	left: -7%;
+	z-index: -1;
+	position: absolute;
+	content: url(../i/elipse.png);
+
+}
+.button-box{
+	position: relative;
+	display: flex;
+	padding-bottom: 12rem;
+	z-index: 999;
+	@include bp ($point_6){
+		padding-bottom: 5rem;
+	}
+}
+.button-box__btn{
+	margin-top: 4rem;
+	width: 24.5rem;
+	height: 7rem;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-family: $font_2;
+	border-radius:2rem;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	cursor: pointer;
+
+}
+.button-box__btn a{
+	text-decoration: none;
+	color:#fff;
+
+}
+.blue-btn{
+	background:$gradient1;
+}
+.purple-btn {
+	background:$gradient2;
+	margin-left: 1rem;
+}
+.sostav {
+	&__row{
+		margin-top: 5.7rem;
+		display: flex;
+		justify-content: space-between;
+		@include bp ($point_3){
+			flex-wrap: wrap;
+		}
+		@include bp ($point_6){
+			margin-top: 2rem;
+		}
+		
+	}
+	&__img{
+		@include bp ($point_3){
+			display: none;
+		}
+	}
+}
+table {
+	width: 36rem;
+    border-spacing: 0px 60px;
+	@include bp ($point_3){
+		width: 100%;
+		border-spacing: 0px 16px;
+	}
+
+}
+
+.sostav__list{
+	color:#000;
+	font-size: 1.8rem;
+}
+.itemList__num{
+	width: 40px;
+	height: 40px;
+	margin-right: 22px;
+	background-color:#1024DB;
+	border-radius:5px;
+	color:#fff;
+	font-family: $font_3;
+	font-size: 1.8rem;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+.itemList__text{
+	font-size: 1.8rem;
+}
+.title-block{
+	font-size: 3.6rem;
+	color:$black;
+	font-family: $font_3;
+}
+.sostav__subtitle{
+	margin-top: 5.7rem;
+	font-size: 2rem;
+	color:$black;
+	font-family: $font_2;
+	@include bp ($point_6){
+		margin-top: 2rem;
+	}
+}
+.description-block{
+	@include bp ($point_4){
+		margin-top: 3rem;
+	}
+	&__row {
+		margin-top: 10rem;
+		border-bottom: 1px solid #C8C8C8;
+		padding-bottom: 4rem;
+		@include bp ($point_3){
+			margin-top: 3rem;
+		}
+	
+	}
+	&__col{
+		display: flex;
+		justify-content: space-between;
+		@include bp ($point_3){
+			flex-wrap: wrap;
+		}
+	}
+	&__box{
+		font-size: 1.8rem;
+		@include bp ($point_6){
+			margin-bottom: 2rem;
+		}
+
+	}
+	&__box p{
+		width: 75%;
+		margin-top: 4rem;
+		line-height: 96.3%;
+		@include bp ($point_3){
+			width: 100%;
+		}
+		@include bp ($point_6){
+			margin-top: 2rem;
+		}
+	}
+	&__img-desc{
+		margin-top: 1rem;
+		width: 70%;
+		line-height: 96.3%;
+		font-size: 1.6rem;
+	}
+}
+.description-name{
+	display: flex;
+	align-items:center;
+	&__num{
+		margin-right: 2rem;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		background-color:$gray;
+		border-radius: 5px;
+		color: #1024DB;
+		font-size: 1.8rem;
+		font-family: $font_3;
+	}
+	&__title{
+		width: 65%;
+		font-size: 2.4rem;
+		font-family: $font_2;
+		line-height: 96.3%;
+		@include bp ($point_4){
+			width: 100%;
+		}
+		@include bp ($point_6){
+			font-size: 22px;
+		}
+	}
+}
+
+.collapse-button{
+	cursor: pointer;
+	&__link{
+		margin-top: 6rem;
+		text-align: center;
+		color:#1024DB;
+		font-family: $font_3;
+		text-decoration-line:underline;
+	}
+}
+.offer-bg{
+	background-image:url('../i/bg-down.png');
+	background-repeat:no-repeat;
+	background-position:50% 0%;
+	@include bp ($point0){
+		background-size:38%;
+}
+@include bp ($point_6){
+	background-size:100%;
+}
+	// background-size:30%;
+}
+.offer-block{
+	margin-top: 5rem;
+	padding-left: 30%;
+	padding-right: 30%;
+	text-align: center;
+	font-size: 1.8rem;
+	@include bp ($point_3){
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	&__title{
+		padding-top: 16rem;
+		font-size: 3.6rem;
+		text-transform: uppercase;
+		font-family: $font_3;
+		@include bp ($point_3){
+			padding-top: 5rem;
+		}
+	&__text{
+		margin-top: 3rem;
+	}
+}
+}
+.offer-block__button{
+	margin-top: 4rem;
+	margin-bottom: 10rem;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	@include bp ($point_6){
+		margin-top: 0rem;
+		margin-bottom: 4rem;
+	}
+}
+
+.collapse-inform{
+	display: none;
+
+}
+.collapse-inform.active{
+	display: block;
+
+}
